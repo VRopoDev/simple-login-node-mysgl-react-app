@@ -189,18 +189,11 @@ class Router {
               message: "An error has occured, please try again.",
             });
             return;
-          }
-          // User found
-          if (data && data.length === 1) {
+          } else {
             req.session.userID = data[0].id;
             res.json({
               success: true,
               username: data[0].username,
-            });
-          } else {
-            res.json({
-              success: false,
-              message: "Username or password is incorrect, please try again.",
             });
           }
         }

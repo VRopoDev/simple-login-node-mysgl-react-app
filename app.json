@@ -1,9 +1,0 @@
-{
-  "name": "Login app",
-  "description": "Login app",
-  "keywords": [
-    "node",
-    "express",
-    "heroku"
-  ]
-}
